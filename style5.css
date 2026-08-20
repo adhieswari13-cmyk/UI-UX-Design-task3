@@ -1,0 +1,192 @@
+body {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    padding-top: 65px;
+}
+
+
+/* ================= HEADER ================= */
+
+.youtube-logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+}
+
+.search-box {
+    width: 45%;
+}
+
+.search-box input {
+    border-radius: 25px 0 0 25px;
+    padding-left: 20px;
+}
+
+.search-btn {
+    width: 60px;
+    border: 1px solid #dee2e6;
+    border-radius: 0 25px 25px 0;
+}
+
+
+/* ================= SIDEBAR ================= */
+
+.sidebar {
+    position: fixed;
+    top: 65px;
+    left: 0;
+    width: 220px;
+    height: calc(100vh - 65px);
+    padding: 15px 10px;
+    overflow-y: auto;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 12px;
+    margin-bottom: 5px;
+
+    color: #000;
+    text-decoration: none;
+
+    border-radius: 10px;
+}
+
+.sidebar-link:hover {
+    background-color: #f2f2f2;
+}
+
+.sidebar-link.active {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.sidebar-link i {
+    font-size: 20px;
+}
+
+
+/* ================= MAIN CONTENT ================= */
+
+.main-content {
+    margin-left: 220px;
+    padding: 25px;
+}
+
+
+/* ================= CATEGORY BAR ================= */
+
+.category-bar {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.category-bar::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* ================= VIDEO CARD ================= */
+
+.video-card {
+    cursor: pointer;
+}
+
+.video-thumbnail {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.video-card:hover .video-thumbnail {
+    border-radius: 5px;
+}
+
+.video-title {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 5px;
+}
+
+
+/* ================= CHANNEL ICON ================= */
+
+.channel-icon {
+    min-width: 36px;
+    height: 36px;
+
+    background-color: #ddd;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        width: 70px;
+        padding: 10px 5px;
+    }
+
+    .sidebar-link {
+        justify-content: center;
+    }
+
+    .sidebar-link span,
+    .sidebar h6,
+    .sidebar hr {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 70px;
+        padding: 15px;
+    }
+
+    .youtube-logo {
+        font-size: 18px;
+    }
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 576px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 12px;
+    }
+
+    .search-box {
+        display: none !important;
+    }
+
+    .video-title {
+        font-size: 14px;
+    }
+
+    .navbar-brand {
+        margin-right: 0;
+    }
+}@charset "utf-8";
+/* CSS Document */
+
